@@ -382,7 +382,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="t3a-s7-hhS">
-                                <rect key="frame" x="96.5" y="415.5" width="221" height="70"/>
+                                <rect key="frame" x="206.5" y="450" width="1" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товар добавлен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf5-Hb-jfD">
                                 <rect key="frame" x="134" y="438" width="146" height="25.5"/>
@@ -851,7 +851,7 @@
         <!--Профиль-->
         <scene sceneID="jIr-ns-5F1">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" title="Профиль" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vzx-at-fwE" customClass="AuthViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" title="Профиль" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vzx-at-fwE" customClass="AuthViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="bk1-EE-ddu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -904,7 +904,7 @@
         <!--Логин-->
         <scene sceneID="GaE-bw-gG5">
             <objects>
-                <viewController title="Логин" modalPresentationStyle="overFullScreen" id="Psm-Kt-faL" customClass="DetailAuthViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Логин" definesPresentationContext="YES" modalPresentationStyle="overCurrentContext" id="Psm-Kt-faL" customClass="DetailAuthViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="2" contentMode="scaleToFill" id="9QA-pq-zMk" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1307,7 +1307,7 @@
         <!--Профиль-->
         <scene sceneID="tu0-bZ-xUf">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" title="Профиль" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5jO-Ca-X9F" customClass="ProfileViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="Профиль" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5jO-Ca-X9F" customClass="ProfileViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="4" contentMode="scaleToFill" id="T2Z-A4-AlP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1518,7 +1518,6 @@
                         <viewLayoutGuide key="safeArea" id="MBp-kp-lAA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Профиль" id="5Z8-mu-6Rk"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Gw9-Ac-Wxm" id="OqL-FJ-uqX"/>
                     </connections>
@@ -1837,10 +1836,10 @@
             </objects>
             <point key="canvasLocation" x="1121.7391304347827" y="115.84821428571428"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="WMf-7v-0Wn">
             <objects>
-                <tabBarController storyboardIdentifier="ProfileTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aOy-oE-Sbm" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aOy-oE-Sbm" customClass="TabBarViewController" customModule="Melis_Cosmetic" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o03-Y3-IRy">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -2104,7 +2103,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="Y7d-9G-ogm">
-                                <rect key="frame" x="96.5" y="415.5" width="221" height="70"/>
+                                <rect key="frame" x="206.5" y="450" width="1" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запрос отправлен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xka-iC-3bW">
                                 <rect key="frame" x="124" y="438" width="166" height="25.5"/>
@@ -2191,6 +2190,6 @@
         <image name="shopping-bag" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rhk-1y-uq9"/>
+        <segue reference="DvT-Zn-1lO"/>
     </inferredMetricsTieBreakers>
 </document>

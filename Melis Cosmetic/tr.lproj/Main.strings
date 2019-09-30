@@ -1,93 +1,93 @@
 
 /* Class = "UILabel"; text = "Заказ на сумму:"; ObjectID = "0aS-JX-pRT"; */
-"0aS-JX-pRT.text" = "Заказ на сумму:";
+"0aS-JX-pRT.text" = "Sipariş miktarı:";
 
 /* Class = "UILabel"; text = "Бонусы"; ObjectID = "1Ap-KG-8P4"; */
-"1Ap-KG-8P4.text" = "Бонусы";
+"1Ap-KG-8P4.text" = "Ikramiye";
 
 /* Class = "UILabel"; text = "Войдите в свой аккаунт"; ObjectID = "3VU-D8-Fuh"; */
-"3VU-D8-Fuh.text" = "Войдите в свой аккаунт";
+"3VU-D8-Fuh.text" = "Hesabınıza giriş yapın";
 
 /* Class = "UILabel"; text = "Total"; ObjectID = "3ze-fu-j0w"; */
-"3ze-fu-j0w.text" = "Total";
+"3ze-fu-j0w.text" = "Toplam";
 
 /* Class = "UIButton"; normalTitle = "Мой профиль"; ObjectID = "4YP-oP-PlH"; */
-"4YP-oP-PlH.normalTitle" = "Мой профиль";
+"4YP-oP-PlH.normalTitle" = "Benim profil";
 
 /* Class = "UINavigationItem"; title = "Профиль"; ObjectID = "5Z8-mu-6Rk"; */
-"5Z8-mu-6Rk.title" = "Профиль";
+"5Z8-mu-6Rk.title" = "Profil";
 
 /* Class = "UIViewController"; title = "Профиль"; ObjectID = "5jO-Ca-X9F"; */
-"5jO-Ca-X9F.title" = "Профиль";
+"5jO-Ca-X9F.title" = "Profil";
 
 /* Class = "UITabBarItem"; title = "Профиль"; ObjectID = "5tT-Lh-oDC"; */
-"5tT-Lh-oDC.title" = "Профиль";
+"5tT-Lh-oDC.title" = "Profil";
 
 /* Class = "UITabBarItem"; title = "Корзина"; ObjectID = "64j-2O-hgI"; */
-"64j-2O-hgI.title" = "Корзина";
+"64j-2O-hgI.title" = "Sepet";
 
 /* Class = "UILabel"; text = "Total amount"; ObjectID = "6bN-xa-b58"; */
-"6bN-xa-b58.text" = "Total amount";
+"6bN-xa-b58.text" = "Toplam tutar";
 
 /* Class = "UILabel"; text = "Description"; ObjectID = "6qd-vA-p7c"; */
-"6qd-vA-p7c.text" = "Description";
+"6qd-vA-p7c.text" = "Açıklama";
 
 /* Class = "UIButton"; normalTitle = "Логин"; ObjectID = "822-yV-b8h"; */
-"822-yV-b8h.normalTitle" = "Логин";
+"822-yV-b8h.normalTitle" = "Giriş";
 
 /* Class = "UILabel"; text = "Description"; ObjectID = "8dL-vu-qka"; */
-"8dL-vu-qka.text" = "Description";
+"8dL-vu-qka.text" = "Açıklama";
 
 /* Class = "UIButton"; normalTitle = "Логин"; ObjectID = "AJB-SL-57v"; */
-"AJB-SL-57v.normalTitle" = "Логин";
+"AJB-SL-57v.normalTitle" = "Giriş";
 
 /* Class = "UIButton"; normalTitle = "Добавить в корзину"; ObjectID = "C0u-Qx-YJP"; */
-"C0u-Qx-YJP.normalTitle" = "Добавить в корзину";
+"C0u-Qx-YJP.normalTitle" = "Sepete ekle";
 
 /* Class = "UITextView"; text = "Информация отсутствует"; ObjectID = "CNh-Lu-6Ya"; */
-"CNh-Lu-6Ya.text" = "Информация отсутствует";
+"CNh-Lu-6Ya.text" = "Bilgi yok";
 
 /* Class = "UITextField"; placeholder = "Имя"; ObjectID = "Cat-x9-46J"; */
-"Cat-x9-46J.placeholder" = "Имя";
+"Cat-x9-46J.placeholder" = "İlk isim";
 
 /* Class = "UITabBarItem"; title = "Избранное"; ObjectID = "Cu7-xn-ju8"; */
-"Cu7-xn-ju8.title" = "Избранное";
+"Cu7-xn-ju8.title" = "Sık";
 
 /* Class = "UINavigationItem"; title = "Подборка"; ObjectID = "DRD-CM-k2f"; */
-"DRD-CM-k2f.title" = "Подборка";
+"DRD-CM-k2f.title" = "Seçim";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "DSX-In-frO"; */
-"DSX-In-frO.text" = "Name";
+"DSX-In-frO.text" = "İlk isim";
 
 /* Class = "UICollectionViewController"; title = "Каталог"; ObjectID = "DVH-td-Svl"; */
-"DVH-td-Svl.title" = "Каталог";
+"DVH-td-Svl.title" = "Rehber";
 
 /* Class = "UINavigationItem"; title = "Корзина"; ObjectID = "EKZ-43-d2e"; */
-"EKZ-43-d2e.title" = "Корзина";
+"EKZ-43-d2e.title" = "Sepet";
 
 /* Class = "UILabel"; text = "1"; ObjectID = "EQj-2e-ItU"; */
 "EQj-2e-ItU.text" = "1";
 
 /* Class = "UILabel"; text = "Total amount"; ObjectID = "Enc-NU-KHu"; */
-"Enc-NU-KHu.text" = "Total amount";
+"Enc-NU-KHu.text" = "Toplam tutar";
 
 /* Class = "UITabBarItem"; title = "Каталог"; ObjectID = "FDc-hh-5Td"; */
-"FDc-hh-5Td.title" = "Каталог";
+"FDc-hh-5Td.title" = "Rehber";
 
 /* Class = "UIViewController"; title = "Корзина"; ObjectID = "FUe-GZ-ISb"; */
-"FUe-GZ-ISb.title" = "Корзина";
+"FUe-GZ-ISb.title" = "Sepet";
 
 /* Class = "UIButton"; normalTitle = "Наши контакты"; ObjectID = "HbL-fA-Pka"; */
-"HbL-fA-Pka.normalTitle" = "Наши контакты";
+"HbL-fA-Pka.normalTitle" = "Bizim iletişim";
 
 /* Class = "UILabel"; text = "Описание товара"; ObjectID = "IBs-uq-hby"; */
-"IBs-uq-hby.text" = "Описание товара";
+"IBs-uq-hby.text" = "Ürün Açıklaması";
 
 /* Class = "UIButton"; normalTitle = "Регистрация"; ObjectID = "IEJ-I5-0Xc"; */
-"IEJ-I5-0Xc.normalTitle" = "Регистрация";
+"IEJ-I5-0Xc.normalTitle" = "Kayıt";
 
 /* Class = "UIButton"; normalTitle = "Политика конфиденциальности"; ObjectID = "IzH-du-jJc"; */
-"IzH-du-jJc.normalTitle" = "Политика конфиденциальности";
+"IzH-du-jJc.normalTitle" = "Gizlilik politikası";
 
 /* Class = "UILabel"; text = "Second text"; ObjectID = "K7e-sD-pnJ"; */
 "K7e-sD-pnJ.text" = "Second text";
@@ -99,7 +99,7 @@
 "MQR-A4-k4a.text" = "Price";
 
 /* Class = "UILabel"; text = "Количество:"; ObjectID = "N4q-Xq-z7c"; */
-"N4q-Xq-z7c.text" = "Количество:";
+"N4q-Xq-z7c.text" = "Sayı:";
 
 /* Class = "UILabel"; text = "Price"; ObjectID = "Ncd-jp-lI0"; */
 "Ncd-jp-lI0.text" = "Price";
@@ -108,28 +108,28 @@
 "NfK-1X-PNK.text" = "Mail";
 
 /* Class = "UILabel"; text = "Выберите количество"; ObjectID = "P7e-JH-ULr"; */
-"P7e-JH-ULr.text" = "Выберите количество";
+"P7e-JH-ULr.text" = "Miktar seç";
 
 /* Class = "UIButton"; normalTitle = "О компании"; ObjectID = "PTL-h8-pUM"; */
-"PTL-h8-pUM.normalTitle" = "О компании";
+"PTL-h8-pUM.normalTitle" = "Şirket hakkında";
 
 /* Class = "UIViewController"; title = "Логин"; ObjectID = "Psm-Kt-faL"; */
-"Psm-Kt-faL.title" = "Логин";
+"Psm-Kt-faL.title" = "Giriş";
 
 /* Class = "UIButton"; normalTitle = "Перейти к оформлению заказа"; ObjectID = "PtZ-KK-hzE"; */
-"PtZ-KK-hzE.normalTitle" = "Перейти к оформлению заказа";
+"PtZ-KK-hzE.normalTitle" = "Ödeme bölümüne git";
 
 /* Class = "UILabel"; text = "Login or create an account that helps you buy faster.You can control the status of the order, as well as view orders made earlier. You will be able to accumulate prize points and receive discount coupons."; ObjectID = "PuZ-YC-xaB"; */
-"PuZ-YC-xaB.text" = "Login or create an account that helps you buy faster.You can control the status of the order, as well as view orders made earlier. You will be able to accumulate prize points and receive discount coupons.";
+"PuZ-YC-xaB.text" = "Daha hızlı satın almanıza yardımcı olacak bir hesap açın ya da giriş yapın. Ödül puanları biriktirebilecek ve indirim kuponları kazanabileceksiniz.";
 
 /* Class = "UIButton"; normalTitle = "Выбор языка"; ObjectID = "PyD-EF-oVk"; */
-"PyD-EF-oVk.normalTitle" = "Выбор языка";
+"PyD-EF-oVk.normalTitle" = "Dil seçimi";
 
 /* Class = "UITextField"; placeholder = "Регион / Область"; ObjectID = "RTK-HM-w7c"; */
-"RTK-HM-w7c.placeholder" = "Регион / Область";
+"RTK-HM-w7c.placeholder" = "Bölge";
 
 /* Class = "UITextField"; placeholder = "Адрес"; ObjectID = "T1E-dD-Q1P"; */
-"T1E-dD-Q1P.placeholder" = "Адрес";
+"T1E-dD-Q1P.placeholder" = "Adres";
 
 /* Class = "UILabel"; text = "Price"; ObjectID = "Utj-KU-HPF"; */
 "Utj-KU-HPF.text" = "Price";
@@ -141,88 +141,88 @@
 "WbF-0y-iYT.placeholder" = "Email";
 
 /* Class = "UILabel"; text = "Товар добавлен"; ObjectID = "Xf5-Hb-jfD"; */
-"Xf5-Hb-jfD.text" = "Товар добавлен";
+"Xf5-Hb-jfD.text" = "Öğe Eklendi";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "Ypa-wY-DRc"; */
 "Ypa-wY-DRc.placeholder" = "Password";
 
 /* Class = "UILabel"; text = "Общая стоимость"; ObjectID = "YsX-sn-Gxc"; */
-"YsX-sn-Gxc.text" = "Общая стоимость";
+"YsX-sn-Gxc.text" = "Toplam maliyet";
 
 /* Class = "UINavigationItem"; title = "Профиль"; ObjectID = "ZoV-va-Df4"; */
-"ZoV-va-Df4.title" = "Профиль";
+"ZoV-va-Df4.title" = "Profil";
 
 /* Class = "UILabel"; text = "Brand"; ObjectID = "a3p-lg-AeF"; */
 "a3p-lg-AeF.text" = "Brand";
 
 /* Class = "UITextField"; placeholder = "Город"; ObjectID = "al7-yS-drp"; */
-"al7-yS-drp.placeholder" = "Город";
+"al7-yS-drp.placeholder" = "Şehir";
 
 /* Class = "UILabel"; text = "Description"; ObjectID = "bJj-0b-lhE"; */
 "bJj-0b-lhE.text" = "Description";
 
 /* Class = "UITextField"; placeholder = "Страна"; ObjectID = "bje-At-Ari"; */
-"bje-At-Ari.placeholder" = "Страна";
+"bje-At-Ari.placeholder" = "Ülke";
 
 /* Class = "UITextField"; placeholder = "Телефон"; ObjectID = "bvC-oE-Qoo"; */
-"bvC-oE-Qoo.placeholder" = "Телефон";
+"bvC-oE-Qoo.placeholder" = "Telefon numarası";
 
 /* Class = "UIButton"; normalTitle = "Возврат товара"; ObjectID = "cIj-ZW-LLp"; */
-"cIj-ZW-LLp.normalTitle" = "Возврат товара";
+"cIj-ZW-LLp.normalTitle" = "Malların iadesi";
 
 /* Class = "UIViewController"; title = "Каталог"; ObjectID = "d0g-W5-hb8"; */
-"d0g-W5-hb8.title" = "Каталог";
+"d0g-W5-hb8.title" = "Rehber";
 
 /* Class = "UITextField"; placeholder = "Фамилия"; ObjectID = "dsq-fp-vRM"; */
-"dsq-fp-vRM.placeholder" = "Фамилия";
+"dsq-fp-vRM.placeholder" = "Soyadı";
 
 /* Class = "UILabel"; text = "Product description"; ObjectID = "eRp-VI-bUR"; */
 "eRp-VI-bUR.text" = "Product description";
 
 /* Class = "UIButton"; normalTitle = "В избранное"; ObjectID = "eV7-7r-fq4"; */
-"eV7-7r-fq4.normalTitle" = "В избранное";
+"eV7-7r-fq4.normalTitle" = "Favorilere";
 
 /* Class = "UILabel"; text = "Description"; ObjectID = "eiS-dn-lG3"; */
 "eiS-dn-lG3.text" = "Description";
 
 /* Class = "UITabBarItem"; title = "Подборка"; ObjectID = "fJ5-49-lNW"; */
-"fJ5-49-lNW.title" = "Подборка";
+"fJ5-49-lNW.title" = "Seçim";
 
 /* Class = "UILabel"; text = "Price"; ObjectID = "fZa-Jv-ziz"; */
 "fZa-Jv-ziz.text" = "Price";
 
 /* Class = "UIViewController"; title = "Регистрация"; ObjectID = "fzm-iF-twH"; */
-"fzm-iF-twH.title" = "Регистрация";
+"fzm-iF-twH.title" = "Kayıt";
 
 /* Class = "UIButton"; normalTitle = "Зарегестрироваться"; ObjectID = "g3l-AR-e9F"; */
-"g3l-AR-e9F.normalTitle" = "Зарегестрироваться";
+"g3l-AR-e9F.normalTitle" = "Kaydol";
 
 /* Class = "UINavigationItem"; title = "Избранное"; ObjectID = "gcW-cw-Tiy"; */
-"gcW-cw-Tiy.title" = "Избранное";
+"gcW-cw-Tiy.title" = "Sık";
 
 /* Class = "UIButton"; normalTitle = "Доставка"; ObjectID = "kiS-FK-DTs"; */
-"kiS-FK-DTs.normalTitle" = "Доставка";
+"kiS-FK-DTs.normalTitle" = "Teslim";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "oKk-hP-BsT"; */
 "oKk-hP-BsT.text" = "0";
 
 /* Class = "UIButton"; normalTitle = "Мои заказы"; ObjectID = "ofK-bx-iqT"; */
-"ofK-bx-iqT.normalTitle" = "Мои заказы";
+"ofK-bx-iqT.normalTitle" = "Siparişlerim";
 
 /* Class = "UILabel"; text = "Total"; ObjectID = "ohe-DR-yrC"; */
 "ohe-DR-yrC.text" = "Total";
 
 /* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "r8K-h6-xFX"; */
-"r8K-h6-xFX.title" = "Назад";
+"r8K-h6-xFX.title" = "Geri";
 
 /* Class = "UIButton"; normalTitle = "Поделиться"; ObjectID = "rNn-fp-Avl"; */
-"rNn-fp-Avl.normalTitle" = "Поделиться";
+"rNn-fp-Avl.normalTitle" = "Bunu paylaş";
 
 /* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "see-tE-1vf"; */
-"see-tE-1vf.placeholder" = "Пароль";
+"see-tE-1vf.placeholder" = "Şifre";
 
 /* Class = "UITextView"; text = "Информация отсутствует"; ObjectID = "tJA-e9-c47"; */
-"tJA-e9-c47.text" = "Информация отсутствует";
+"tJA-e9-c47.text" = "Bilgi yok";
 
 /* Class = "UILabel"; text = "First text"; ObjectID = "tO3-OO-6C9"; */
 "tO3-OO-6C9.text" = "First text";
@@ -231,13 +231,13 @@
 "tQr-od-hHy.text" = "Viber: 063 639 1773";
 
 /* Class = "UINavigationItem"; title = "Каталог"; ObjectID = "tSZ-En-6Yq"; */
-"tSZ-En-6Yq.title" = "Каталог";
+"tSZ-En-6Yq.title" = "Rehber";
 
 /* Class = "UILabel"; text = "Заказ принят"; ObjectID = "vx5-qK-P8b"; */
-"vx5-qK-P8b.text" = "Заказ принят";
+"vx5-qK-P8b.text" = "Sipariş kabul edildi";
 
 /* Class = "UIViewController"; title = "Профиль"; ObjectID = "vzx-at-fwE"; */
-"vzx-at-fwE.title" = "Профиль";
+"vzx-at-fwE.title" = "Profil";
 
 /* Class = "UILabel"; text = "Товаров в заказе"; ObjectID = "yn0-Q1-WJ4"; */
-"yn0-Q1-WJ4.text" = "Товаров в заказе";
+"yn0-Q1-WJ4.text" = "Siparişteki mal miktarı";

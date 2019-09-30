@@ -8,35 +8,39 @@
 
 import UIKit
 
-class AddProductTableViewCell: UITableViewCell  {
+class AddProductTableViewCell: UITableViewCell {
 
-    @IBAction func productAddToCartButton(_ sender: Any) {
     
-    }
     
     @IBOutlet weak var addToCartLabel: UIButton! 
     
     @IBAction func toFavoriteButton(_ sender: Any) {
+
     }
-    @IBOutlet weak var imageLikeFavorite: UIImageView!
     
-    @IBAction func shareButton(_ sender: Any) {
-        
-    }
+    @IBOutlet weak var imageLikeFavorite: UIImageView!
 
     @IBOutlet weak var imageShare: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+       
+    }
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+    
+    
+
     
     }
 

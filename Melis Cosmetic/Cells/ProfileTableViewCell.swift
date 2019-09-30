@@ -10,6 +10,15 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var avatarImageLabel: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var countBonusLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

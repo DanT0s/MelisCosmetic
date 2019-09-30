@@ -10,4 +10,10 @@ import UIKit
 
 class FavoritesCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var likeImageLabel: UIImageView!
+    @IBOutlet weak var favoritesCatalogImage: UIImageView!
+    @IBOutlet weak var favoritesPriceLabel: UILabel!
+    @IBOutlet weak var favoritesDescriptionLabel: UILabel!
+    
 }

@@ -7,22 +7,26 @@
 //
 
 import Foundation
-import Firebase
+
+
+var catalogID = String()
 
 struct Catalog {
-    let antiAging: String
-    let crema: String
-    let faceCleaning: String
-    let foundationСreams: String
-    let masks: String
+    var catalogName: String
+    var id: String
     
-    let ref: DatabaseReference
+    var dictionary: [String:Any] {
+        return [
+            "catalogName":catalogName
+        ]
+    }
     
-    init(snapshot: DataSnapshot) {
-        let snapshotValue = snapshot.value as! [String: AnyObject]
-        title = snapshotValue["title"] as! String
-        userId = snapshotValue["userId"] as! String
-        catalog = snapshotValue["catalog"] as! String
-        ref = snapshot.ref
+}
+
+extension Catalog {
+    init?(dictionary: [String:Any], id: String) {
+        guard let catalogName = dictionary["catalogName"] as? String
+            else { return nil }
+        self.init(catalogName: catalogName, id: id)
     }
 }

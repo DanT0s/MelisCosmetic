@@ -10,4 +10,11 @@ import UIKit
 
 class DetailCatalogCollectionViewCell: UICollectionViewCell {
     
+
+    @IBOutlet weak var detailCatalogImage: UIImageView!
+    @IBOutlet weak var detailPriceLabel: UILabel!
+    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var likeLabel: UIImageView!
+    
+    
 }

@@ -23,7 +23,6 @@ extension UIImageView {
             self.image = cacheImage as? UIImage
             return
         }
-        
         let storeRef = Storage.storage().reference().child(urlString)
         storeRef.getData(maxSize: 4 * 1024 * 1024) { [weak self] (data, error) in
             if let error = error {

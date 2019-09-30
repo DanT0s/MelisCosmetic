@@ -10,6 +10,13 @@ import UIKit
 
 class SumBasketTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var goodsInOrderLabel: UILabel!
+    @IBOutlet weak var goodsWorthLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

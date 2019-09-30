@@ -8,11 +8,19 @@
 
 import UIKit
 
-class _heckoutBasketTableViewCell: UITableViewCell {
+class CheckoutBasketTableViewCell: UITableViewCell {
 
+   
+    @IBOutlet weak var checkoutButtonLabel: UIButton!
+    
+    @IBAction func checkoutButtonPressed(_ sender: UIButton) {
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+      checkoutButtonLabel.layer.cornerRadius = 10
+        checkoutButtonLabel.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -10,15 +10,27 @@ import UIKit
 
 class QuantityProductTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var productQuantityLabel: UILabel!
     @IBOutlet weak var productNumberQuantityLabel: UILabel!
+    @IBOutlet weak var stepper: UIStepper!
+    
+    var stepperValue: Int?
+    
     @IBAction func productStepper(_ sender: UIStepper) {
-        productNumberQuantityLabel.text = String(format: "%.f",(sender.value))
+        stepperValue = Int(stepper.value)
+        productNumberQuantityLabel.text = stepperValue?.description
+        DispatchQueue.main.async {
+            self.setNeedsDisplay()
+        }
+        
+        
     }
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

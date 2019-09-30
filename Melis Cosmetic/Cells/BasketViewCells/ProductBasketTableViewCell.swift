@@ -10,9 +10,20 @@ import UIKit
 
 class ProductBasketTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var productImageView: UIImageView!
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var productManagerLabel: UIButton!
+    @IBAction func productManagerButton(_ sender: UIButton) {
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

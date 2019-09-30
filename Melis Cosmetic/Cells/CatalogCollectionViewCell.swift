@@ -10,4 +10,14 @@ import UIKit
 
 class CatalogCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var catalogNameLabel: UILabel!
+    @IBOutlet weak var catalogImage: UIImageView!
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = 20
+        self.layer.masksToBounds = true
+        
+    }
 }

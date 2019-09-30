@@ -10,6 +10,11 @@ import UIKit
 
 class CompilationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var compilationImageView: UIImageView!
+    @IBOutlet weak var firstTextLabel: UILabel!
+    @IBOutlet weak var secondTextLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

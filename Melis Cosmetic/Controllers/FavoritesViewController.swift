@@ -7,83 +7,124 @@
 //
 
 import UIKit
+import Firebase
 
-private let reuseIdentifier = "Cell"
+class FavoritesViewController: UIViewController {
 
-class FavoritesViewController: UICollectionViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
+    var documents: [DocumentSnapshot] = []
+    public var favoritesArray: [Favorites] = []
+    let db = Firestore.firestore()
+    var likeImageName: UIImage = UIImage(named: "redLike")!
+    private var listener: ListenerRegistration!
+    var isFavorites: Bool = true
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.collectionView.backgroundColor = #colorLiteral(red: 0.9451538706, green: 0.9451538706, blue: 0.9451538706, alpha: 1)
+        let width = view.frame.size.width / 2.1
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: 320)
+        
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        // Configure the cell
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        guard uid != nil else {
+            self.collectionView.alpha = 0
+            
+            return
+        }
+        self.query = baseQuery()
+        loadData()
+        self.collectionView.alpha = 1
+    }
     
-        return cell
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        guard uid != nil else {
+            self.collectionView.alpha = 0
+            
+            return
+        }
+        self.query = baseQuery()
+        favoritesArray.removeAll(keepingCapacity: true)
+        self.collectionView.alpha = 1
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    func loadData() {
+        self.listener = query?.addSnapshotListener { [weak self] (documents, error) in
+            guard let snapshot = documents else {
+                print("Error fetching documents results: \(error!)")
+                return
+            }
+            
+            let result = snapshot.documents.map{ (document) -> Favorites in
+                if let task = Favorites(dictionary: document.data(), id: document.documentID) { return task } else {
+                    fatalError("Unable to initialize type \(Favorites.self) with dictionary \(document.data())")
+                }
+            }
+            self?.documents = snapshot.documents
+            self?.favoritesArray.append(contentsOf: result)
+            if (self?.favoritesArray.count)! > 0 {
+                self?.collectionView.alpha = 1
+            } else {
+                self?.collectionView.alpha = 0
+            }
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
+        
     }
-    */
+    
+    fileprivate func baseQuery() -> Query {
 
+        return Firestore.firestore().collection("users").document(uid!).collection("favorites")
+    }
+    
+    fileprivate var query: Query? {
+        didSet {
+            if let listener = listener {
+                listener.remove()
+            }
+        }
+    }
+    
+    
+    
+    
+}
+    extension FavoritesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return favoritesArray.count
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoritesCell", for: indexPath) as! FavoritesCollectionViewCell
+            let detailTitle = favoritesArray[indexPath.item]
+            favoritesIDArray = favoritesArray.map { (dictionary) -> String in
+                return dictionary.id
+                }
+            cell.favoritesCatalogImage.loadImages(urlString: "catalog/\(detailTitle.id).png")
+            cell.favoritesPriceLabel.text = "\(detailTitle.price) грн."
+            cell.favoritesDescriptionLabel.text = detailTitle.description
+            cell.likeImageLabel.image = likeImageName
+            
+            return cell
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+            let item = favoritesArray[indexPath.item]
+            productID = db.collection("user").document(uid!).collection("favorites").document(item.id).documentID
+            catalogID = db.collection("user").document(uid!).collection("favorites").document(item.catalogCompilationID).documentID
+            }
+
+        
 }
